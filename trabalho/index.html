@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto de Exercícios</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1> Lógica e Cálculo</h1>
+
+    <div class="menu">
+        <button onclick="mostrarSecao('triangulo')">1. Triângulo</button>
+        <button onclick="mostrarSecao('imc')">2. IMC</button>
+        <button onclick="mostrarSecao('impostos')">3. Impostos</button>
+        <button onclick="mostrarSecao('salario')">4. Salário</button>
+        <button onclick="mostrarSecao('credito')">5. Crédito</button>
+        <button onclick="mostrarSecao('lanchonete')">6. Lanchonete</button>
+        <button onclick="mostrarSecao('vendas')">7. Vendas</button>
+        <button onclick="mostrarSecao('pagamento')">8. Pagamento</button>
+    </div>
+
+    <div id="triangulo" class="secao">
+        <h2>1. Verificador de Triângulo</h2>
+        <label>Lado X: <input type="number" id="ladoX"></label><br>
+        <label>Lado Y: <input type="number" id="ladoY"></label><br>
+        <label>Lado Z: <input type="number" id="ladoZ"></label><br>
+        <button onclick="verificarTriangulo()">Verificar</button>
+        <p id="resultadoTriangulo"></p>
+    </div>
+
+    <div id="imc" class="secao">
+        <h2>2. Calculadora de IMC</h2>
+        <label>Peso (kg): <input type="number" id="peso"></label><br>
+        <label>Altura (m): <input type="number" id="altura"></label><br>
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        <p id="resultadoIMC"></p>
+    </div>
+
+    <div id="impostos" class="secao">
+        <h2>3. Calculadora de Impostos</h2>
+        <label>Ano do carro: <input type="number" id="anoCarro"></label><br>
+        <label>Valor da tabela: <input type="number" id="valorCarro"></label><br>
+        <button onclick="calcularImposto()">Calcular</button>
+        <p id="resultadoImposto"></p>
+    </div>
+
+    <div id="salario" class="secao">
+        <h2>4. Calculadora de Salário</h2>
+        <label>Salário atual: <input type="number" id="salarioAtual"></label><br>
+        <label>Código do cargo: <input type="number" id="codigoCargo"></label><br>
+        <button onclick="calcularSalario()">Calcular</button>
+        <p id="resultadoSalario"></p>
+    </div>
+
+    <div id="credito" class="secao">
+        <h2>5. Crédito Bancário</h2>
+        <label>Saldo médio: <input type="number" id="saldoMedio"></label><br>
+        <button onclick="calcularCredito()">Calcular</button>
+        <p id="resultadoCredito"></p>
+    </div>
+
+    <div id="lanchonete" class="secao">
+        <h2>6. Lanchonete</h2>
+        <label>Código do produto: <input type="number" id="codigoLanche"></label><br>
+        <label>Quantidade: <input type="number" id="quantidadeLanche"></label><br>
+        <button onclick="calcularLanche()">Calcular</button>
+        <p id="resultadoLanche"></p>
+    </div>
+
+    <div id="vendas" class="secao">
+        <h2>7. Sistema de Vendas</h2>
+        <label>Preço do produto: <input type="number" id="precoVenda"></label><br>
+        <label>Código da condição: <input type="text" id="codigoVenda"></label><br>
+        <button onclick="calcularVenda()">Calcular</button>
+        <p id="resultadoVenda"></p>
+    </div>
+
+    <div id="pagamento" class="secao">
+        <h2>8. Pagamento de Professores</h2>
+        <label>Nível do professor (1, 2 ou 3): <input type="number" id="nivelProfessor"></label><br>
+        <label>Horas/aula semanais: <input type="number" id="horasAula"></label><br>
+        <button onclick="calcularPagamento()">Calcular</button>
+        <p id="resultadoPagamento"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
