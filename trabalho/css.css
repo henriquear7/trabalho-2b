@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-color: #000000;
+    background-color: #444141;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
 
 .secao {
     display: none;
-    background-color: #fff;
+    background-color: #444141;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -42,12 +42,12 @@ input[type="number"], input[type="text"] {
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #0c0e0c;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #020202;
 }
