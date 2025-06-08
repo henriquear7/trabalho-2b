@@ -1,11 +1,11 @@
-// Mostrar/ocultar
+// botao
 function mostrarSecao(id) {
     const secoes = document.querySelectorAll('.secao');
     secoes.forEach(secao => secao.style.display = 'none');
     document.getElementById(id).style.display = 'block';
 }
 
-// 1. Triângulo
+// 1. triangulo
 function verificarTriangulo() {
     const x = Number(document.getElementById('ladoX').value);
     const y = Number(document.getElementById('ladoY').value);
@@ -25,7 +25,7 @@ function verificarTriangulo() {
     }
 }
 
-// 2. IMC
+// 2. imc
 function calcularIMC() {
     const peso = Number(document.getElementById('peso').value);
     const altura = Number(document.getElementById('altura').value);
@@ -42,7 +42,7 @@ function calcularIMC() {
     document.getElementById('resultadoIMC').textContent = `IMC: ${imc.toFixed(2)} - ${classificacao}`;
 }
 
-// 3. Impostos
+// 3. imposto
 function calcularImposto() {
     const ano = Number(document.getElementById('anoCarro').value);
     const valor = Number(document.getElementById('valorCarro').value);
@@ -51,7 +51,7 @@ function calcularImposto() {
     document.getElementById('resultadoImposto').textContent = `Imposto a pagar: R$ ${imposto.toFixed(2)}`;
 }
 
-// 4. Salário
+// 4. salario
 function calcularSalario() {
     const salario = Number(document.getElementById('salarioAtual').value);
     const codigo = Number(document.getElementById('codigoCargo').value);
@@ -66,7 +66,7 @@ function calcularSalario() {
     document.getElementById('resultadoSalario').textContent = `Novo salário: R$ ${novoSalario.toFixed(2)} (Diferença: R$ ${diferenca.toFixed(2)})`;
 }
 
-// 5. Crédito
+// 5. credito
 function calcularCredito() {
     const saldo = Number(document.getElementById('saldoMedio').value);
     let percentual = 0;
@@ -77,7 +77,7 @@ function calcularCredito() {
     document.getElementById('resultadoCredito').textContent = `Crédito: R$ ${credito.toFixed(2)}`;
 }
 
-// 6. Lanchonete
+// 6. lanchonete
 function calcularLanche() {
     const codigo = Number(document.getElementById('codigoLanche').value);
     const quantidade = Number(document.getElementById('quantidadeLanche').value);
@@ -93,7 +93,7 @@ function calcularLanche() {
     document.getElementById('resultadoLanche').textContent = `Total a pagar: R$ ${total.toFixed(2)}`;
 }
 
-// 7. Vendas
+// 7. venda
 function calcularVenda() {
     const preco = Number(document.getElementById('precoVenda').value);
     const codigo = document.getElementById('codigoVenda').value;
@@ -106,7 +106,7 @@ function calcularVenda() {
     document.getElementById('resultadoVenda').textContent = `Total a pagar: R$ ${total.toFixed(2)}`;
 }
 
-// 8. Pagamento
+// 8. pagamento
 function calcularPagamento() {
     const nivel = Number(document.getElementById('nivelProfessor').value);
     const horas = Number(document.getElementById('horasAula').value);
